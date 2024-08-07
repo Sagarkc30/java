@@ -1,0 +1,65 @@
+//finding the prime number or not
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner n= new Scanner(System.in);
+        System.out.println("enter the number");
+        int num=n.nextInt();
+        int div=2;
+        int flag=0;
+        if(num==0||num==1){
+            flag=1;//1and0 are not prime numbers
+        }
+        while(div<num){
+            if(num%div==0){
+                flag=1;??if the number is divisibe by other numbers than itself it will be non prime numbers
+                break;
+                
+            }
+            else{
+                div=div+1;
+            }
+            
+        }
+        if(flag==0){
+                System.out.println("it is prime number:"+num);
+            }
+            else{
+                System.out.println("it is not a prime number:"+num);
+            }
+	}
+}
+
+//max of three numbers 
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+        Scanner n= new Scanner(System.in);
+        System.out.println("enter the number1");
+        int num1=n.nextInt();
+        System.out.println("enter the number2");
+        int num2=n.nextInt();
+        System.out.println("enter the number2");
+        int num3=n.nextInt();
+        
+        if(num1>num2){
+            if(num1>num3){
+                System.out.println("greater number is:"+num1);
+                }
+                else{
+                    System.out.println("greater number is:"+num3);
+                }
+        }
+        else{
+            if(num2>num3){
+                System.out.println("greater number is:"+num2);
+                }
+                else{
+                    System.out.println("greater number is :"+num3);
+                }
+            
+        }
+	}
+}
